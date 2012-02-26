@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTTP at a glance</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/explanation.css">
+	</head>
+	<body>
+		<div>
+		<section>
+		<h1>HTTP at a glance</h1>
+		<p>
+		Many web developers using HTTP don't think about the protocol itself.
+		This site should provide a basic understanding of HTTP 1.1 and ease the
+		development of web applications that use HTTP.
+		</p>
+		</section>
+		<section class="disclaimer">
+		This "HTTP explanation" is a incomplete, simplified, human-readable
+		summary of the
+		<a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">full specification</a>.
+		</section>
+		<section class="given">
+		<header><h2>Given</h2></header>
+		<p>
+			A
+			<a href="http://en.wikipedia.org/wiki/Uniform_Resource_Locator">URL</a>,
+			<a href="http://en.wikipedia.org/wiki/Uniform_Resource_Identifier">URI</a> or
+			<a href="http://en.wikipedia.org/wiki/Internationalized_Resource_Identifier">IRI</a>,
+			called resource, with the
+			<a href="http://en.wikipedia.org/wiki/URI_scheme">scheme</a>
+			<code>http</code>.
+		</p>
+		<h3>Example</h3>
+		</section>
+		<section class="example">
+		<p>
+			<strong>http</strong>://example.com<br/>
+			<strong>http</strong>://www.google.com/?q=http<br/>
+			<strong>http</strong>://example.org/à-propos/mère
+		</p>
+		</section>
+		<section class="capabilities">
+		<header><h2>with the following capabilities</h2></header>
+		<ul>
+			<li>
+				<img src="images/icons/get.png" alt="" />
+				<div>
+				<h3>GET</h3>
+				<p>
+					With the <code>GET</code> request you can
+					<strong>retrieve</strong> the content of a resource.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/icons/put.png" alt="" />
+				<div>
+				<h3>PUT</h3>
+				<p>
+					With the <code>PUT</code> request you can
+					<strong>replace</strong> the content of a resource.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/icons/post.png" alt="" />
+				<div>
+				<h3>POST</h3>
+				<p>
+					With the <code>POST</code> request you can
+					<strong>create</strong> a new resource.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/icons/delete.png" alt="" />
+				<div>
+				<h3>DELETE</h3>
+				<p>
+					With the <code>DELETE</code> request you can
+					<strong>remove</strong> a resource.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/icons/head.png" alt="" />
+				<div>
+				<h3>HEAD</h3>
+				<p>
+					With the <code>HEAD</code> request you can
+					<strong>check</strong> the condition of a resource. This
+					request is identical to the <code>GET</code> request, but
+					it does not return any content.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/icons/options.png" alt="" />
+				<div>
+				<h3>OPTIONS</h3>
+				<p>
+					With the <code>OPTIONS</code> request you can
+					<strong>retrieve</strong> the capabilities of a resource.
+				</p>
+				</div>
+			</li>
+		</ul>
+		</section>
+		<section class="responses">
+		<header><h2>with the following responses</h2></header>
+		<ul>
+			<li>
+				<img src="images/icons/successful.png" alt="" />
+				<div>
+				<h3><strong>200</strong> - Successful</h3>
+				<p>
+				The responses <strong>200</strong> to <strong>206</strong>
+				indicate, that the request was <strong>successful</strong>.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/icons/redirection.png" alt="" />
+				<div>
+				<h3><strong>300</strong> - Redirection</h3>
+				<p>
+				The responses <strong>300</strong> to <strong>307</strong>
+				indicate, that the request should be send to
+				<strong>another resource</strong>.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/icons/badrequest.png" alt="" />
+				<div>
+				<h3><strong>400</strong> - Bad request</h3>
+				<p>
+				The responses <strong>400</strong> to <strong>417</strong>
+				indicate, that the request was <strong>malformed</strong>.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/icons/servererror.png" alt="" />
+				<div>
+				<h3><strong>500</strong> - Server error</h3>
+				<p>
+				The responses <strong>500</strong> to <strong>505</strong>
+				indicate, that the request couldn't be answered because of a 
+				server error.
+				</p>
+				</div>
+			</li>
+		</ul>
+		</section>
+		<section>
+			<header><h2>Now you know</h2></header>
+			<p>
+			Now that you know the more or less important glimpses about
+			HTTP 1.1 you could dig a bit further.
+			</p>
+			<ul>
+				<li>Start developing some
+				<a href="http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven">true</a>
+				<a href="http://en.wikipedia.org/wiki/Representational_state_transfer">RESTful</a>
+				architectures</li>
+				<li>Think about your usage of HTTP requests in your projects you
+				did so far and how you could improve that in the future</li>
+				<li>Dig further into the
+				<a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">HTTP 1.1 specification</a>
+				and learn more about
+				<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14">headers</a>
+				and all the
+				<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10">status codes</a>
+				and
+				<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9">requests</a>
+				that were not mentioned here
+				</li>
+			</ul>
+		</section>
+		</div>
+		<footer>
+			<h2>This site is available in the following languages</h2>
+			<p>
+			<a href="de/">Deutsch</a>,
+			<a href=".">English</a>
+			</p>
+			<p>
+			<strong>
+			Help out in translating this site to other languages and send a
+			<a href="">pull-request</a> on GitHub!
+			</strong>
+			</p>
+			<p style="min-height:2em;">
+			<a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
+			<img alt="Creative Commons Lizenzvertrag" style="border-width:0;
+			float:left; margin-right: 1em;"
+			src="http://i.creativecommons.org/l/by/3.0/88x31.png" />
+			</a>
+			This work is licensed under a <a rel="license"
+			href="http://creativecommons.org/licenses/by/3.0/">
+			Creative Commons Attribution 3.0 Unported License</a>.
+			</p>
+			<p>
+			Icons from
+			<a href="http://www.iconfinder.com/search/?q=iconset%3Abrightmix">Brightmix icon set</a>
+			made by
+			<a href="http://www.brightmix.com/">Brightmix</a>
+			under
+			<a href="http://en.wikipedia.org/wiki/WTFPL">WTFPL</a>.
+			</p>
+			<p>
+			<a href="imprint.html">Imprint</a>
+			</p>
+		</footer>
+	</body>
+</html>

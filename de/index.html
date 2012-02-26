@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTTP auf einen Blick</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/explanation.css">
+	</head>
+	<body>
+		<div>
+		<section>
+		<h1>HTTP auf einen Blick</h1>
+		<p>
+		Viele Webentwickler machen sich bei der Benutzung von HTTP keine
+		Gedanken über das eigentliche Protokoll. Diese Seite soll dem einfachen
+		Verständnis von HTTP 1.1 dienen und helfen, das World Wide Web für
+		Webanwendungen besser nutzbar zu machen.
+		</p>
+		</section>
+		<section class="disclaimer">
+		Diese "HTTP Erklärung" ist lediglich eine vereinfachte, unvollständige
+		Zusammenfassung der
+		<a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">vollständigen Spezifikation</a>
+		in allgemeinverständlicher Sprache.
+		</section>
+		<section class="given">
+		<header><h2>Gegeben sei</h2></header>
+		<p>
+			Eine
+			<a href="http://de.wikipedia.org/wiki/Uniform_Resource_Locator">URL</a>,
+			<a href="http://de.wikipedia.org/wiki/Uniform_Resource_Identifier">URI</a> oder
+			<a href="http://de.wikipedia.org/wiki/Internationalized_Resource_Identifier">IRI</a>,
+			genannt Resource, die als
+			<a href="http://de.wikipedia.org/wiki/Uniform_Resource_Identifier#scheme">Schema</a>
+			<code>http</code> hat.
+		</p>
+		<h3>Beispiel</h3>
+		</section>
+		<section class="example">
+		<p>
+			<strong>http</strong>://example.com<br/>
+			<strong>http</strong>://www.google.de/?q=http<br/>
+			<strong>http</strong>://example.org/à-propos/mère
+		</p>
+		</section>
+		<section class="capabilities">
+		<header><h2>mit den folgenden Möglichkeiten</h2></header>
+		<ul>
+			<li>
+				<img src="../images/icons/get.png" alt="" />
+				<div>
+				<h3>GET</h3>
+				<p>
+					Mit der <code>GET</code> Anfrage kann der Inhalt einer
+					Resource <strong>erfragt</strong> werden.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/icons/put.png" alt="" />
+				<div>
+				<h3>PUT</h3>
+				<p>
+					Mit der <code>PUT</code> Anfrage kann der Inhalt einer
+					Resource <strong>ersetzt</strong> werden.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/icons/post.png" alt="" />
+				<div>
+				<h3>POST</h3>
+				<p>
+					Mit der <code>POST</code> Anfrage kann eine neue Resource
+					<strong>erstellt</strong> werden.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/icons/delete.png" alt="" />
+				<div>
+				<h3>DELETE</h3>
+				<p>
+					Mit der <code>DELETE</code> Anfrage kann eine Resource
+					<strong>entfernt</strong> werden.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/icons/head.png" alt="" />
+				<div>
+				<h3>HEAD</h3>
+				<p>
+					Mit der <code>HEAD</code> Anfrage kann der Zustand einer
+					Resource <strong>erfragt</strong> werden. Diese Anfrage
+					ist Identisch zu der <code>GET</code> Anfrage, liefert
+					jedoch keinen Inhalt.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/icons/options.png" alt="" />
+				<div>
+				<h3>OPTIONS</h3>
+				<p>
+					Mit der <code>OPTIONS</code> Anfrage können die
+					Möglichkeiten der Resource <strong>erfragt</strong>
+					werden.
+				</p>
+				</div>
+			</li>
+		</ul>
+		</section>
+		<section class="responses">
+		<header><h2>mit den folgenden Antworten</h2></header>
+		<ul>
+			<li>
+				<img src="../images/icons/successful.png" alt="" />
+				<div>
+				<h3><strong>200</strong> - Erfolgreich</h3>
+				<p>
+				Die Antworten <strong>200</strong> bis <strong>206</strong>
+				signalisieren, dass die Anfrage <strong>erfolgreich</strong>
+				war.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/icons/redirection.png" alt="" />
+				<div>
+				<h3><strong>300</strong> - Weiterleitung</h3>
+				<p>
+				Die Antworten <strong>300</strong> bis <strong>307</strong>
+				signalisieren, dass die Anfrage an eine <strong>andere
+				Resource</strong> gesendet werden soll.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/icons/badrequest.png" alt="" />
+				<div>
+				<h3><strong>400</strong> - Falsche Anfrage</h3>
+				<p>
+				Die Antworten <strong>400</strong> bis <strong>417</strong>
+				signalisieren, dass die Anfrage <strong>falsch gestellt</strong>
+				wurde.
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/icons/servererror.png" alt="" />
+				<div>
+				<h3><strong>500</strong> - Serverfehler</h3>
+				<p>
+				Die Antworten <strong>500</strong> bis <strong>505</strong>
+				signalisieren, dass die Anfrage aufgrund eines Serverfehlers
+				nicht beantwortet werden konnte.
+				</p>
+				</div>
+			</li>
+		</ul>
+		</section>
+		<section>
+			<header><h2>Und jetzt?</h2></header>
+			<p>
+			Jetzt da du die mehr oder weniger wichtigen Punkte über HTTP 1.1
+			weißt, kannst du tiefer eintauchen.
+			</p>
+			<ul>
+				<li>Entwickle
+				<a href="http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven">echte</a>
+				<a href="http://de.wikipedia.org/wiki/Representational_State_Transfer">RESTful</a>
+				Architekturen</li>
+				<li>Denke über die Verwendung von HTTP-Methoden in deinen
+				vergangen Projekten nach und wie du den Einsatz in Zukunft
+				verbesser kannst</li>
+				<li>Erfahre mehr direkt aus der
+				<a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">HTTP 1.1 Spezifikation</a>
+				and lerne etwas über
+				<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14">headers</a>
+				und all die
+				<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10">Status-Codes</a>
+				und
+				<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9">Methoden</a>,
+				die hier nicht erwähnt wurden.
+				</li>
+			</ul>
+		</section>
+		</div>
+		<footer>
+			<h2>Diese Seite ist in folgenden Sprachen verfügbar</h2>
+			<p>
+			<a href=".">Deutsch</a>,
+			<a href="..">English</a>
+			</p>
+			<p>
+			<strong>
+			Hilf mit, diese Seite in andere Sprachen zu übersetzen
+			und sende einen <a href="">Pull-Request</a> auf GitHub!
+			</strong>
+			</p>
+			<p style="min-height:2em;">
+			<a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
+			<img alt="Creative Commons Lizenzvertrag" style="border-width:0;
+			float:left; margin-right: 1em;"
+			src="http://i.creativecommons.org/l/by/3.0/88x31.png" />
+			</a>
+			Dieses Werk bzw. Inhalt steht unter einer <a rel="license"
+			href="http://creativecommons.org/licenses/by/3.0/deed.de">
+			Creative Commons Namensnennung 3.0 Unported Lizenz</a>.
+			</p>
+			<p>
+			Icons aus
+			<a href="http://www.iconfinder.com/search/?q=iconset%3Abrightmix">Brightmix icon set</a>
+			erstellt von
+			<a href="http://www.brightmix.com/">Brightmix</a>
+			unter
+			<a href="http://de.wikipedia.org/wiki/WTFPL">WTFPL</a>.
+			</p>
+			<p>
+			<a href="../imprint.html">Impressum</a>
+			</p>
+		</footer>
+	</body>
+</html>

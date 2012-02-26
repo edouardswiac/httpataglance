@@ -1,0 +1,164 @@
+@font-face {
+	font-family: Averia;
+	src: url('../fonts/Averia-Light.ttf');
+}
+
+@font-face {
+	font-family: Averia;
+	src: url('../fonts/Averia-Bold.ttf');
+	font-weight: bold;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: justify;
+	-webkit-transistion: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+body {
+	padding: 2.5% 15%;
+	font-family: Averia, sans;
+	font-size: 14px;
+	max-width: 900px;
+	background-color: #333333;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+ul,
+body > div > section ul {
+	list-style-type: disc;
+	margin-left: 2em;
+}
+
+body, a:visited, a:active, a {
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body > div {
+	-webkit-border-top-left-radius: 0.6em;
+	-webkit-border-top-right-radius: 0.6em;
+	-moz-border-radius-topleft: 0.6em;
+	-moz-border-radius-topright: 0.6em;
+	border-top-left-radius: 0.6em;
+	border-top-right-radius: 0.6em;
+	background-color: white;
+}
+
+body > div,
+body > div a,
+body > div a:visited,
+body > div a:active {
+	color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6,
+section {
+	display: block;
+}
+
+h1 { font-size: 1.8em }
+h2 { font-size: 1.4em }
+h3 { font-size: 1.2em }
+
+body > div {
+	padding: 5% 0;
+	padding-top: 0.5em;
+}
+
+body > div > section {
+	margin-top: 2em;
+	background-color: white;
+}
+
+body > div > section:first-child {
+	margin-top: 0;
+}
+
+body > div > section,
+body > div > section header {
+	padding: 0.75em 1em;
+	border-radius: 0.2em;
+}
+
+body > div > section header {
+	margin: -1.4em;
+	margin-bottom: 1em;
+	border-bottom: none;
+	background-color: #ddd;
+}
+
+body > div > section.disclaimer {
+	margin: 0 10%;
+}
+
+body > div > section.given header {
+	background-color: #F38630;
+}
+
+body > div > section.capabilities header {
+	background-color: #CFF09E;
+}
+
+body > div > section.responses header {
+	background-color: #A7DBD8;
+}
+
+body > div section.example,
+body > div section.disclaimer {
+	width: 100%;
+	background-color: #DDD;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	margin: 0;
+}
+
+body > div > section.capabilities > ul,
+body > div > section.responses > ul {
+	list-style-type: none;
+}
+
+body > div > section.capabilities ul li,
+body > div > section.responses ul li {
+	min-height: 5em;
+}
+
+body > div > section > ul li {
+	margin-bottom: 1em;
+	clear: both;
+}
+
+body > div > section > ul li div {
+	margin-left: 5em;
+}
+
+body > div > section > ul li img {
+	width: 5em;
+	height: 5em;
+	float: left;
+	opacity: 0.8;
+}
+
+body > div > section > ul li h3 {
+	padding-top: 0.5em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+body > footer {
+	margin-top: 2em;
+}
+
