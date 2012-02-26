@@ -14,16 +14,14 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	text-align: justify;
-	-webkit-transistion: 1s;
-	-moz-transition: 1s;
-	transition: 1s;
 }
 
 body {
 	padding: 2.5% 15%;
 	font-family: Averia, sans;
 	font-size: 14px;
-	max-width: 900px;
+	min-width: 70%;
+	max-width: 1100px;
 	background-color: #333333;
 }
 
